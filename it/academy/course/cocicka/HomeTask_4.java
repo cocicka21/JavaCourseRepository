@@ -44,6 +44,8 @@ public class HomeTask_4 {
         System.out.println("short to float = " + e);
         double r = (double) x;
         System.out.println("short to double = " + r);
+        byte t = (byte) x;
+        System.out.println("short to byte = " + t);
         return x;
     }
     static int IntConvert(int x){
@@ -53,6 +55,12 @@ public class HomeTask_4 {
         System.out.println("int to float = " + w);
         double e = (double) x;
         System.out.println("int to double = " + e);
+        byte r = (byte) x;
+        System.out.println("int to byte = " + r);
+        short t = (short) x;
+        System.out.println("int to short = " + t);
+        char y = (char) x;
+        System.out.println("int to char = " + y);
         return x;
     }
     static long LongConvert(long x){
@@ -60,6 +68,12 @@ public class HomeTask_4 {
         System.out.println("long to float = " + q);
         double w = (double) x;
         System.out.println("long to double = " + w);
+        byte e = (byte) x;
+        System.out.println("long to short = " + e);
+        short r = (short) x;
+        System.out.println("long to short = " + r);
+        int t = (int) x;
+        System.out.println("long to int = " + t);
         return x;
     }
     static char CharConvert(char x){
