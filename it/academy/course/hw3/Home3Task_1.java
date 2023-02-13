@@ -1,4 +1,4 @@
-package it.academy.course.hw3;
+package by.itacademy.course.hw3;
 
 public class Home3Task_1 {
     public static void main(String[] args) {
