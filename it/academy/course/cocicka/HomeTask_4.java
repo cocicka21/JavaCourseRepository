@@ -1,4 +1,4 @@
-package it.academy.course.cocicka;
+package by.itacademy.course.cocicka;
 
 import java.util.Scanner;
 
