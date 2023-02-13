@@ -11,10 +11,10 @@ public class Home3Task_7 {
         int secondNumber = in.nextInt();
         System.out.println("What is the result of multiplying the first number by the second?");
         int result = in.nextInt();
-        if (result == FirstNumber * SecondNumber){
+        if (result == firstNumber * secondNumber){
             System.out.println("True");
         } else {
-            result = FirstNumber * SecondNumber;
+            result = firstNumber * secondNumber;
             System.out.println("False\nCorrect answer = " + result);
         }
     }
