@@ -11,7 +11,13 @@ public class Home3Task_8 {
         switch (workDayHour) {
             case 0: System.out.println("Less than an hour left");
             case 1: System.out.println(workDayHour + " hour left");
-            case 2, 3, 4, 5, 6, 7, 8: System.out.println(workDayHour + " hours left");
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8: System.out.println(workDayHour + " hours left");
             default: System.out.println(workDayHour + " hours left");
         }
     }
