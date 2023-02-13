@@ -1,4 +1,4 @@
-package it.academy.course.hw3;
+package by.itacademy.course.hw3;
 
 
 import java.util.Arrays;
