@@ -1,4 +1,4 @@
-package it.academy.course.cocicka;
+package by.itacademy.course.cocicka;
 
 public class HomeTask_1 {
     public static void main(String[] args) {
