@@ -1,4 +1,4 @@
-package by.itacademy.course.hw4;
+package it.academy.course.hw4;
 
 import java.util.Scanner;
 
