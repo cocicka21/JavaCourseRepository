@@ -18,10 +18,10 @@ public class Home4Task_5 {
                 minNumber = myArray[i];
             }
         }
-            System.out.print("Index with min value : ");
+            System.out.print("Min value : ");
             for (int i = 1; i < myArray.length; i = i + 2) {
                 if (minNumber == myArray[i]) {
-                    System.out.print(i + " ");
+                    System.out.print(minNumber + " ");
                 }
             }
 

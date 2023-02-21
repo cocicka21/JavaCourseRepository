@@ -13,12 +13,12 @@ public class Home4Task_4 {
             System.out.print(myArray[i] + " ");
         }
         System.out.println();
-        for (int j : myArray) {
-            if (minNumber > j) {
-                minNumber = j;
+        for (int elem : myArray) {
+            if (minNumber > elem) {
+                minNumber = elem;
             }
-            if (maxNumber < j) {
-                maxNumber = j;
+            if (maxNumber < elem) {
+                maxNumber = elem;
             }
         }
         System.out.print("Index with min value : ");

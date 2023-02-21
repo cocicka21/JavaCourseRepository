@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Home4Task_7 {
     public static void main(String[] args) {
-        int lengthArr = 10;
+        int lengthArr = 9;
         int[] myArray = new int[lengthArr];
 
         Random rnd = new Random();
