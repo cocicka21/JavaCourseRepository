@@ -6,54 +6,54 @@ public class HomeTask_4 {
     public static void main(String[] args) {
         System.out.println("\nTask-4");
         byte b = 12;
-        ByteConvert(b);
+        byteConvert(b);
 
         short s = 121;
-        ShortConvert(s);
+        shortConvert(s);
 
         int i = 1212;
-        IntConvert(i);
+        intConvert(i);
 
         long l = 121212L;
-        LongConvert(l);
+        longConvert(l);
 
         float f = 1.21f;
-        FloatConvert(f);
+        floatConvert(f);
 
         double d = 1.2121;
 
         char c = 'a';
-        CharConvert(c);
+        charConvert(c);
     }
 
-    static byte ByteConvert(byte x){
-        short q = (short) x;
+    static byte byteConvert(byte x){
+        short q = x;
         System.out.println("byte to short = " + q);
-        int w = (int) x;
+        int w = x;
         System.out.println("byte to int = " + w);
-        long e = (long) x;
+        long e = x;
         System.out.println("byte to long = " + e);
         return x;
     }
-    static short ShortConvert(short x){
-        int q = (int) x;
+    static short shortConvert(short x){
+        int q = x;
         System.out.println("short to int = " + q);
-        long w = (long) x;
+        long w = x;
         System.out.println("short to long = " + w);
-        float e = (float) x;
+        float e = x;
         System.out.println("short to float = " + e);
-        double r = (double) x;
+        double r = x;
         System.out.println("short to double = " + r);
         byte t = (byte) x;
         System.out.println("short to byte = " + t);
         return x;
     }
-    static int IntConvert(int x){
-        long q = (long) x;
+    static int intConvert(int x){
+        long q = x;
         System.out.println("int to long = " + q);
         float w = (float) x;
         System.out.println("int to float = " + w);
-        double e = (double) x;
+        double e = x;
         System.out.println("int to double = " + e);
         byte r = (byte) x;
         System.out.println("int to byte = " + r);
@@ -63,7 +63,7 @@ public class HomeTask_4 {
         System.out.println("int to char = " + y);
         return x;
     }
-    static long LongConvert(long x){
+    static long longConvert(long x){
         float q = (float) x;
         System.out.println("long to float = " + q);
         double w = (double) x;
@@ -76,13 +76,13 @@ public class HomeTask_4 {
         System.out.println("long to int = " + t);
         return x;
     }
-    static char CharConvert(char x){
-        int q = (int) x;
+    static char charConvert(char x){
+        int q = x;
         System.out.println("char to int = " + q);
         return x;
     }
-    static float FloatConvert(float x){
-        double q = (double) x;
+    static float floatConvert(float x){
+        double q = x;
         System.out.println("float to double = " + q);
         return x;
     }
