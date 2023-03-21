@@ -1,4 +1,4 @@
-package it.academy.course.hw7;
+package it.academy.course.hw7.Home7Task_3;
 
 public class Home7Task_3 {
     public static void main(String[] args) {
