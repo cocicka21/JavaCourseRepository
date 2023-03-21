@@ -20,8 +20,12 @@ public class Home6Task_3 {
             }
         }
         System.out.print("New sentence: ");
+        sentence(words, longestIndex, shortestIndex);
 
-        for (String word : words){
+    }
+
+    public static void sentence(String[] words, int longestIndex, int shortestIndex) {
+        for (String word : words) {
             String temp = words[longestIndex];
             words[longestIndex] = words[shortestIndex];
             words[shortestIndex] = temp;
