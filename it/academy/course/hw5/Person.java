@@ -12,8 +12,8 @@ public class Person {
             age = yearsOld;
         }
 
-        public void moving(){
-            System.out.println(fullName + " Talking");
+        public void move(){
+            System.out.println(fullName + " Moving");
         }
         public void talk(){
             System.out.println(fullName + " Talking");
