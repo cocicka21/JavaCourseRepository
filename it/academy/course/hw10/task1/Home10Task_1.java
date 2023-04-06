@@ -14,7 +14,7 @@ public class Home10Task_1 {
         Set<Integer> set3 = new TreeSet<>();
         Collections.addAll(set3, 2, 5, 40, 82, 41, 13, 12, 21);
         SetOperations.printSet("set3", set3);
-        Set<?> set4 = SetOperations.intersect(set1, set2);
+        Set<Integer> set4 = SetOperations.intersect(set1, set2);
         SetOperations.printSet("set1 intersect set2", set4);
         SetOperations.printSet("set1 intersect set2 union set3", SetOperations.union(set4, set3));
 
