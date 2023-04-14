@@ -13,8 +13,8 @@ public class Home12Task_3 {
             } else {
                 System.out.println("Files already exists");
             }
-            List<Integer> list = readFile(file);
             fillOfNumbers(file);
+            List<Integer> list = readFile(file);
             countAverage(list);
         } catch (IOException e) {
             System.out.println(e);
@@ -29,27 +29,28 @@ public class Home12Task_3 {
             wFile.write(binary + "\n");
         }
         wFile.close();
-
         System.out.println("The files is filled with data");
     }
+
     public static List<Integer> readFile(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
         List<Integer> list = new ArrayList<>();
         String line;
-        while ((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             list.add(Integer.parseInt(line, 2));
         }
         return list;
     }
-    public static void countAverage(List<Integer> list){
+
+    public static void countAverage(List<Integer> list) {
         double sum = 0;
         double quantity = 0;
-        for (int elem : list){
+        for (int elem : list) {
             sum += elem;
             quantity++;
             System.out.println(elem);
         }
-        double avg = sum/quantity;
+        double avg = sum / quantity;
         System.out.println("Average of numbers : " + avg);
 
     }
