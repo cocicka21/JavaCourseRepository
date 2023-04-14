@@ -17,8 +17,8 @@ public class Home12Task_1 {
             } else {
                 System.out.println("Files already exists");
             }
-            List<Integer> list1 = new ArrayList<>();
-            List<Integer> list2 = new ArrayList<>();
+            List<Integer> list1;
+            List<Integer> list2;
             fillOfNumbers(in1, in2);
             list1 = readNumbersFromFile(in1);
             list2 = readNumbersFromFile(in2);
