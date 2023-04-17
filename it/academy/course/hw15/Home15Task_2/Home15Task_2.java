@@ -9,27 +9,24 @@ public class Home15Task_2 {
             col.add((int) (Math.random() * 101));
         }
         System.out.println(col);
-        Integer minNumbers = col.stream()
-                .min(Comparator.naturalOrder())
-                .get();
-        System.out.println("min number :" + minNumbers);
-        Integer maxNumbers = col.stream()
-                .max(Comparator.naturalOrder())
-                .get();
-        System.out.println("max number :" + maxNumbers);
-        double avgNumbers = col.stream()
+        Optional<Integer> minNumbers = col.stream()
+                .min(Comparator.naturalOrder());
+        minNumbers.ifPresent(integer -> System.out.println("min number :" + integer));
+        Optional<Integer> maxNumbers = col.stream()
+                .max(Comparator.naturalOrder());
+        maxNumbers.ifPresent(integer -> System.out.println("max number :" + integer));
+        OptionalDouble avgNumbers = col.stream()
                 .mapToDouble(s -> s)
-                .average()
-                .getAsDouble();
-        System.out.println("average of all numbers :" + avgNumbers);
-        Integer multiNumbers = col.stream()
-                .reduce((a, b) -> a * b)
-                .get();
-        System.out.println("product of all numbers :" + multiNumbers);
-        Integer sumNumbers = col.stream()
-                .reduce(Integer::sum)
-                .get();
-        System.out.println("sum of all numbers :" + sumNumbers);
+                .average();
+        if (avgNumbers.isPresent()) {
+            System.out.println("average of all numbers :" + avgNumbers.getAsDouble());
+        }
+        Optional<Integer> multiNumbers = col.stream()
+                .reduce((a, b) -> a * b);
+        multiNumbers.ifPresent(integer -> System.out.println("product of all numbers :" + integer));
+        Optional<Integer> sumNumbers = col.stream()
+                .reduce(Integer::sum);
+        sumNumbers.ifPresent(integer -> System.out.println("sum of all numbers :" + integer));
         int sumOfDigits = col.stream()
                 .map(x -> Integer.toString(x))
                 .flatMapToInt(CharSequence::chars)
