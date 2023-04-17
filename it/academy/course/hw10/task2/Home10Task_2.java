@@ -12,7 +12,9 @@ public class Home10Task_2 {
         Map<String, Integer> wordCount = new HashMap<>();
         String[] words = text.split("\\s+");
         for (String word : words) {
-            word = word.replaceAll("[^a-zA-Zа-яА-Я]", "");
+            word = word
+                    .toLowerCase()
+                    .replaceAll("[^a-zA-Zа-яА-Я]", "");
             if (word.length() > 0) {
                 if (wordCount.containsKey(word)) {
                     wordCount.put(word, wordCount.get(word) + 1);
