@@ -2,9 +2,9 @@ package it.academy.course.hw7.Home7Task_3;
 
 public class Home7Task_3 {
     public static void main(String[] args) {
-        Fruit apple = new Apple(100, 100);
-        Fruit pear = new Pear(100, 140);
-        Fruit apricot = new Apricot(100, 180);
+        Fruit apple = new Fruit(100, 100);
+        Fruit pear = new Fruit(100, 140);
+        Fruit apricot = new Fruit(100, 180);
         apple.setWeight(300);
         pear.setWeight(150);
         apricot.setWeight(210);

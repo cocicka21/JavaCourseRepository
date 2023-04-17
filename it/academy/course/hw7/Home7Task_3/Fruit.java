@@ -1,8 +1,9 @@
 package it.academy.course.hw7.Home7Task_3;
 
 public class Fruit {
-    double weight;
-    double costs;
+    private double weight;
+    private double costs;
+    private double newWeight;
 
     public Fruit(double weight, double costs) {
         this.weight = weight;
@@ -14,12 +15,17 @@ public class Fruit {
     }
 
     public double costFruit() {
-        costs = weight;
-        System.out.println(costs + " for " + weight);
+        newWeight = getNewWeight();
+        costs = (newWeight * costs) / weight;
+        System.out.println(costs + " for " + newWeight);
         return costs;
     }
 
-    public void setWeight(double weight) {
-        this.weight = weight;
+    public void setWeight(double newWeight) {
+        this.newWeight = newWeight;
+    }
+
+    public double getNewWeight (){
+        return newWeight;
     }
 }
