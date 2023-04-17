@@ -5,8 +5,7 @@ public class Flower {
     private double cost;
     private String color;
     private double avgLifeTime;
-    static double price;
-    static String colors = "";
+    private double price;
 
     public Flower(String flowerName, double cost, String color, double avgLifeTime) {
         this.flowerName = flowerName;
@@ -31,11 +30,7 @@ public class Flower {
         return avgLifeTime;
     }
 
-    public static double getPrice() {
+    public double getPrice() {
         return price;
-    }
-
-    public static String getColors() {
-        return colors;
     }
 }
