@@ -7,8 +7,9 @@ public class Home7Task_4 {
         Flower peonyP = new Flower("Peony", 10, "pink", 8);
         double[] costs = {roseR.getCost(), daisyW.getCost(), peonyP.getCost()};
         double[] timeLife = {roseR.getAvgLifeTime(), daisyW.getAvgLifeTime(), peonyP.getAvgLifeTime()};
+        String[] colors = {roseR.getColor(), daisyW.getColor(), peonyP.getColor()};
         System.out.println("Bucket of flowers cost : " + calculateTheAmount(costs) + "$");
-        System.out.println("Colors in the basket : " + Flower.getColors());
+        System.out.println("Colors in the basket : " + getColors(colors));
         System.out.println("A basket of flowers will wither through : " + getAvgTime(timeLife) + " days");
     }
 
@@ -28,5 +29,13 @@ public class Home7Task_4 {
             costFlowers += cost;
         }
         return costFlowers;
+    }
+
+    public static String getColors(String[] colors) {
+        String tempColor = "";
+        for (String color : colors) {
+            tempColor += color + " ";
+        }
+        return tempColor;
     }
 }
